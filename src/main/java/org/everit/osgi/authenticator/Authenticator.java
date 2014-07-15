@@ -31,9 +31,9 @@ public interface Authenticator {
      * principal should be returned. In case of failed authentication a <code>null</code> value must be returned.
      *
      * @param pricipal
-     *            The principal to authenticate. E.g. email address, user name, etc.
+     *            The principal to authenticate. E.g. email address, user name, etc. Cannot be null.
      * @param credential
-     *            The credential to authenticate with. E.g. password, pin code, certificate, etc.
+     *            The credential to authenticate with. E.g. password, pin code, certificate, etc. Cannot be null.
      * @return The original principal or its mapped unique identifier if the authentication was successful. If the
      *         authentication fails a <code>null</code> value must be returned.
      */
