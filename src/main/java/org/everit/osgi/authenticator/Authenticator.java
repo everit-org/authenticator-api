@@ -1,25 +1,25 @@
 /**
- * This file is part of org.everit.osgi.authenticator.api.
+ * This file is part of Everit - Authenticator API.
  *
- * org.everit.osgi.authenticator.api is free software: you can redistribute it and/or modify
+ * Everit - Authenticator API is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * org.everit.osgi.authenticator.api is distributed in the hope that it will be useful,
+ * Everit - Authenticator API is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU Lesser General Public License for more details.
  *
  * You should have received a copy of the GNU Lesser General Public License
- * along with org.everit.osgi.authenticator.api.  If not, see <http://www.gnu.org/licenses/>.
+ * along with Everit - Authenticator API.  If not, see <http://www.gnu.org/licenses/>.
  */
 package org.everit.osgi.authenticator;
 
 /**
  * The Authenticator interface validates the incoming authentication information and maps the principal to an other
  * unique identifier if necessary. The authentication information (principal and credential) can be any kind of data
- * that can authenticate a user: email address, username, password, pin code, certificate, etc.
+ * that can authenticate a user: email address, user name, password, pin code, certificate, etc.
  */
 public interface Authenticator {
 
