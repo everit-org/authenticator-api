@@ -30,13 +30,13 @@ public interface Authenticator {
      * unique identifier (e.g. in case of LDAP, an email address can be mapped to an UID) if necessary or the original
      * principal should be returned. In case of failed authentication a <code>null</code> value must be returned.
      *
-     * @param pricipal
+     * @param principal
      *            The principal to authenticate. E.g. email address, user name, etc. Cannot be null.
      * @param credential
      *            The credential to authenticate with. E.g. password, pin code, certificate, etc. Cannot be null.
      * @return The original principal or its mapped unique identifier if the authentication was successful. If the
      *         authentication fails a <code>null</code> value must be returned.
      */
-    String authenticate(String pricipal, String credential);
+    String authenticate(String principal, String credential);
 
 }
