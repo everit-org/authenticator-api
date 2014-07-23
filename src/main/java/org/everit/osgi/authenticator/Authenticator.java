@@ -31,11 +31,12 @@ public interface Authenticator {
      * principal should be returned. In case of failed authentication a <code>null</code> value must be returned.
      *
      * @param principal
-     *            The principal to authenticate. E.g. email address, user name, etc. Cannot be null.
+     *            The principal to authenticate. E.g. email address, user name, etc.
      * @param credential
-     *            The credential to authenticate with. E.g. password, pin code, certificate, etc. Cannot be null.
-     * @return The original principal or its mapped unique identifier if the authentication was successful. If the
-     *         authentication fails a <code>null</code> value must be returned.
+     *            The credential to authenticate with. E.g. password, pin code, certificate, etc.
+     * @return The original principal or its mapped unique identifier if the authentication was successful. A
+     *         <code>null</code> value must be returned if the authentication fails or one of the input parameter is
+     *         <code>null</code>.
      */
     String authenticate(String principal, String credential);
 
