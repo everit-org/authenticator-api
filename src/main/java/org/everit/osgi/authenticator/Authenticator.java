@@ -16,6 +16,8 @@
  */
 package org.everit.osgi.authenticator;
 
+import java.util.Optional;
+
 /**
  * The Authenticator interface validates the incoming authentication information and maps the principal to an other
  * unique identifier if necessary. The authentication information (principal and credential) can be any kind of data
@@ -34,10 +36,10 @@ public interface Authenticator {
      *            The principal to authenticate. E.g. email address, user name, etc.
      * @param credential
      *            The credential to authenticate with. E.g. password, pin code, certificate, etc.
-     * @return The original principal or its mapped unique identifier if the authentication was successful. A
-     *         <code>null</code> value must be returned if the authentication fails or one of the input parameter is
-     *         <code>null</code>.
+     * @return an {@link Optional} with the original principal or its mapped unique identifier if the authentication was
+     *         successful. An {@link Optional} with <code>null</code> value must be returned if the authentication fails
+     *         or one of the input parameter is <code>null</code>.
      */
-    String authenticate(String principal, String credential);
+    Optional<String> authenticate(String principal, String credential);
 
 }
