@@ -17,6 +17,8 @@ Implemented components based on this concept are listed [here][4].
 #Implementation
 Available implementation is available in project [authentication-simple][2].
 
+[![Analytics](https://ga-beacon.appspot.com/UA-15041869-4/everit-org/authenticator-api)](https://github.com/igrigorik/ga-beacon)
+
 [1]: http://everitorg.wordpress.com/2014/07/31/everit-authentication/
 [2]: https://github.com/everit-org/authentication-simple
 [3]: http://attilakissit.wordpress.com/2014/07/09/everit-authentication/#authenticator
