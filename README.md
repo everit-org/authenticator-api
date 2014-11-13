@@ -15,7 +15,9 @@ Full authentication concept is available on blog post [Everit Authentication][1]
 Implemented components based on this concept are listed [here][4].
 
 #Implementation
-Available implementation is available in project [authentication-simple][2].
+Available implementations:
+ - [authentication-simple][2]
+ - [authenticator-ldap][5]
 
 [![Analytics](https://ga-beacon.appspot.com/UA-15041869-4/everit-org/authenticator-api)](https://github.com/igrigorik/ga-beacon)
 
@@ -23,3 +25,4 @@ Available implementation is available in project [authentication-simple][2].
 [2]: https://github.com/everit-org/authentication-simple
 [3]: http://attilakissit.wordpress.com/2014/07/09/everit-authentication/#authenticator
 [4]: http://everitorg.wordpress.com/2014/07/31/everit-authentication-implemented-and-released-2/
+[5]: https://github.com/everit-org/authenticator-ldap
